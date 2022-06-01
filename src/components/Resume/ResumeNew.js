@@ -9,7 +9,7 @@ import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const resumeLink =
-  "http://localhost:3000/static/media/kamalSDE-cv.b21562e69d62828c0d03.pdf";
+  "https://cheery-sundae-7ffd9e.netlify.app/static/media/kamalSDE-cv.b21562e69d62828c0d03.pdf";
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);

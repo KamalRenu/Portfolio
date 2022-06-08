@@ -64,9 +64,9 @@ function Projects() {
             <ProjectCard
               imgPath={gmail}
               isBlog={false}
-              title="Gmail clone"
-              description="Gmail clone developed with the MERN stack and Electron JS. Electron Js is a framework, it helps us develope cross-platform applications by using existing web technologies."
-              link="https://mellifluous-bombolone-528fc8.netlify.app"
+              title="Mail Application"
+              description="Mail app is the MERN Stack application using nodemailer for send mail."
+              link="https://mail-app-kamalrenu.herokuapp.com/"
               client="https://github.com/KamalRenu/gmailclone-frontend"
               server="https://github.com/KamalRenu/gmailclone-backend"
             />

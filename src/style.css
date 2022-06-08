@@ -546,7 +546,7 @@ html {
     padding-top: 150px !important;
     padding-bottom: 30px !important;
     background-image: var(--section-background-color) !important;
-    color: white !important;
+    color: white !important
   }
   
   .tech-icons {
@@ -740,3 +740,27 @@ html {
   .fork-btn-inner::after {
     display: none !important;
   }
+
+  .contact-section {
+    position: relative !important;
+    padding-top: 150px !important;
+    padding-bottom: 30px !important;
+    background-image: var(--section-background-color) !important;
+    color: white !important;
+  }
+
+  .contact__form .form-control {
+    padding: 1.375rem .75rem;
+    line-height: 1.5;
+    border-radius: 0 !important;
+}
+
+.contact__form input.form-control {
+    margin-bottom: 2em;
+    height: calc(2.5em + .75rem + 2px);
+}
+
+.address {
+  text-align: left !important;
+  color: purple;
+}

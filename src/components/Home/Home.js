@@ -5,7 +5,7 @@ import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
 import Button from "react-bootstrap/Button";
-import pdf from "../../Assets/../Assets/kamalSDE-cv.pdf";
+import pdf from "../../Assets/../Assets/kamalnew-cv.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";

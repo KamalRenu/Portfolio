@@ -1,31 +1,13 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
-import Particle from '../Particle';
-import { useFormik } from 'formik';
-import axios from 'axios';
 import { BiPhoneCall } from 'react-icons/bi'
 import { AiOutlineMail } from 'react-icons/ai'
 import { GoLocation } from 'react-icons/go'
 
 function Contact() {
-  const formik = useFormik({
-    initialValues: {
-        email: '',
-        name: ''
-    },
-    onSubmit: async (values) => {
-        try {
-            let loginData = await axios.post("http://localhost:3001/login",values)
-            window.localStorage.setItem("my_token",loginData.data.token)
-        } catch (error) {
-            console.log(error)
-        }
-    },
-});
   return (
     <>
       <Container fluid className="contact-section">
-        <Particle />
         <Container>
         <Row className="mb-5 mt-3">
           <Col lg='8'>
@@ -48,40 +30,34 @@ function Contact() {
             </address>
           </Col>
           <Col lg="5" className="d-flex align-items-center">
-            <form className='contact_form w-100 justify-between' onSubmit={formik.handleSubmit}>
+            <form className='contact_form w-100'>
               <Row>
                 <Col lg="12" className='form-group'>
                   <input
-                    className='form-control'
+                    className='form-control rounded-0'
                     id="name"
                     name="name"
                     placeholder="Name"
                     type="text"
-                    onChange={formik.handleChange}
-                    value={formik.values.name}
                   />
                 </Col>&nbsp;
                 <Col lg="12" className='form-group'>
                   <input
-                    className='form-control'
+                    className='form-control rounded-0'
                     id="email"
                     name="email"
                     placeholder="Email"
                     type="email"
-                    onChange={formik.handleChange}
-                    value={formik.values.email}
                   />
                 </Col>
               </Row>
               <br />
-              <textarea className='form-control' id='message'
+              <textarea className='form-control rounded-0' id='message'
                 name="messge"
                 placeholder="Message"
                 rows="5"
                 type="text"
-                onChange={formik.handleChange}
-                value={formik.values.mesage}
-              ></textarea>
+              ></textarea><br />
               <Row>
                 <Col lg='12' className='form-group'>
                   <Button variant="primary" type="submit">Send</Button>

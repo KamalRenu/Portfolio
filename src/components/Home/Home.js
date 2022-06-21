@@ -4,12 +4,11 @@ import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
-import Button from "react-bootstrap/Button";
-import pdf from "../../Assets/../Assets/kamalnew-cv.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
-import { pdfjs } from "react-pdf";
-import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+import {
+  AiFillGithub
+} from "react-icons/ai";
+import { FaLinkedinIn } from "react-icons/fa";
 
 function Home() {
   return (
@@ -34,6 +33,31 @@ function Home() {
               <div style={{ padding: 50, textAlign: "left" }}>
                 <Type />
               </div>
+
+              <div>
+                <a href="https://drive.google.com/file/d/15J8GQus-t9nyHcH8S9dJMtIlH0cKqrrC/view?usp=sharing" target="_blank" rel="noreferrer">
+                  <button className="btn cv-button" type="button"><AiOutlineDownload />&nbsp;MY CV</button>
+                </a>
+                <a
+                  style={{ marginLeft: 5}}
+                  href="https://github.com/KamalRenu"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <AiFillGithub />
+                </a>
+                <a
+                  style={{ marginLeft: 5}}
+                  href="https://www.linkedin.com/in/kamal-renu-78994714a/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <FaLinkedinIn />
+                </a>
+              </div>
+
             </Col>
 
             <Col md={5} style={{ paddingBottom: 20 }}>
@@ -47,17 +71,6 @@ function Home() {
           </Row>
         </Container>
       </Container>
-      <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button
-            variant="primary"
-            href={pdf}
-            target="_blank"
-            style={{ maxWidth: "250px" }}
-          >
-            <AiOutlineDownload />
-            &nbsp;Download CV
-          </Button>
-        </Row>
       <Home2 />
     </section>
   );

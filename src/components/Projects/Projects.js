@@ -6,6 +6,7 @@ import blog from "../../Assets/Projects/blog.png";
 import chat from "../../Assets/Projects/chat.png";
 import ecomm from "../../Assets/Projects/ecomm.png";
 import gmail from "../../Assets/Projects/gmail.png";
+import DemoCredential from "./DemoCredential";
 
 function Projects() {
   return (
@@ -18,23 +19,26 @@ function Projects() {
         <p style={{ color: "white" }}>
           Here are a few projects I've worked on recently.
         </p>
-        <Row>
         <h1 className="project-heading">
-          Demo credentials
+          Demo <strong className="purple">Credentials </strong>
         </h1>
-          <Col md={12} className="home-about-social">
-            <p>User: <span className="purple">user123@gmail.com </span></p>
+        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={6} className="project-card">
+            <DemoCredential
+              title="User Credential"
+              mail="user123@gmail.com"
+              pass="user@123"
+            />
           </Col>
-          <Col md={12} className="home-about-social">
-            <p>Password: <span className="purple">user@123 </span></p>
+
+          <Col md={6} className="project-card">
+            <DemoCredential
+              title="Admin Credential"
+              mail="admin@gmail.com"
+              pass="admin@123"
+            />
           </Col>
-          <Col md={12} className="home-about-social">
-            <p>Admin User: <span className="purple">admin@gmail.com </span></p>
-          </Col>
-          <Col md={12} className="home-about-social">
-            <p>Password: <span className="purple">admin@123 </span></p>
-          </Col>
-          </Row>
+        </Row>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
@@ -66,8 +70,8 @@ function Projects() {
               isBlog={false}
               title="Mail Application"
               description="Mail app is the MERN Stack application using nodemailer for send mail."
-              link="https://mail-app-kamalrenu.herokuapp.com/"
-              client="https://github.com/KamalRenu/gmailclone-frontend"
+              link="https://classy-paprenjak-0a2cf3.netlify.app"
+              client="https://github.com/KamalRenu/mail-app"
               server="https://github.com/KamalRenu/gmailclone-backend"
             />
           </Col>

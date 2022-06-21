@@ -2,6 +2,9 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { BiLinkExternal } from "react-icons/bi";
+import {
+  AiFillGithub
+} from "react-icons/ai";
 
 function ProjectCards(props) {
   return (
@@ -14,14 +17,14 @@ function ProjectCards(props) {
         </Card.Text>
         <Button variant="primary" href={props.link} target="_blank">
           <BiLinkExternal /> &nbsp;
-          {props.isBlog ? "View Blog" : "View Project"}
+          {props.isBlog ? "View Blog" : "live"}
         </Button>
         <Button variant="primary" href={props.client} style={{marginLeft: "5px"}} target="_blank">
-          <BiLinkExternal /> &nbsp;
+          <AiFillGithub /> &nbsp;
           {props.isBlog ? "View Blog" : "client"}
         </Button>
-        <Button variant="primary" href={props.server} style={{padding: "5px"}} target="_blank">
-          <BiLinkExternal /> &nbsp;
+        <Button variant="primary" href={props.server} style={{marginLeft: "5px"}} target="_blank">
+          <AiFillGithub /> &nbsp;
           {props.isBlog ? "View Blog" : "server"}
         </Button>
       </Card.Body>

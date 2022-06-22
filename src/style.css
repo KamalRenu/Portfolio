@@ -256,7 +256,6 @@ html {
   
   .home-section {
     position: relative;
-    z-index: -1;
     background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
     background-position: top center;
     background-repeat: no-repeat;
@@ -284,8 +283,12 @@ html {
     color: #cd5ff8;
   }
 
+  .my-cv {
+    margin-left: 45px !important;
+    position: relative !important;
+  }
+
   .cv-button {
-    margin-left: 45px;
     color: #fff !important;
     background-color: #623686 !important;
     border-color: #623686 !important;

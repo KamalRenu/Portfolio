@@ -33,11 +33,9 @@ function Home() {
               <div style={{ padding: 50, textAlign: "left" }}>
                 <Type />
               </div>
-
-              <div>
-                <a href="https://drive.google.com/file/d/15J8GQus-t9nyHcH8S9dJMtIlH0cKqrrC/view?usp=sharing" target="_blank" rel="noreferrer">
-                  <button className="btn cv-button" type="button"><AiOutlineDownload />&nbsp;MY CV</button>
-                </a>
+              
+              <div className="my-cv">
+              <button onClick={() => window.open("https://drive.google.com/file/d/15J8GQus-t9nyHcH8S9dJMtIlH0cKqrrC/view?usp=sharing")} className="btn cv-button" type="button"><AiOutlineDownload />&nbsp;MY CV</button>
                 <a
                   style={{ marginLeft: 5}}
                   href="https://github.com/KamalRenu"

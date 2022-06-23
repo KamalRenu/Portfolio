@@ -35,7 +35,7 @@ function Home() {
               </div>
               
               <div className="my-cv">
-              <button onClick={() => window.open("https://drive.google.com/file/d/1Hw91XA9c1CuLKp9PhAt1ujZ963ZsagEBf/view?usp=sharing")} className="btn cv-button" type="button"><AiOutlineDownload />&nbsp;MY CV</button>
+              <button onClick={() => window.open("https://drive.google.com/file/d/1O34T9iy9MKHVbpei5CXL1bGg5V15CPLL/view?usp=sharing")} className="btn cv-button" type="button"><AiOutlineDownload />&nbsp;RESUME</button>
                 <a
                   style={{ marginLeft: 5}}
                   href="https://github.com/KamalRenu"
